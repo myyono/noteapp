@@ -1,0 +1,87 @@
+:root {
+   --red: hsl(0, 78%, 62%);
+   --cyan: hsl(180, 62%, 55%);
+   --orange: hsl(34, 97%, 64%);
+   --blue: hsl(212, 86%, 64%);
+   --veryDarkBlue: hsl(234, 12%, 34%);
+   --grayishBlue: hsl(229, 6%, 66%);
+   --veryLightGray: hsl(0, 0%, 98%);
+} 
+
+body {
+    background-color: var(--veryLightGray);
+    font-family: "poppins", sans-serif;
+    text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h1 {
+      font-size: 1.5rem;
+      line-height: 1rem;
+}
+  h2 {
+      font-size: 1.25rem;
+      margin-top: 0px;
+      color: var(--veryDarkBlue);    
+}
+p {
+    font-size: 0,9375rem;
+}
+#header {
+    margin-top: 88px;
+    margin-bottom: 77px;
+    text-align: center;
+}
+#header h1:first-of-type {
+    font-weight: 200;
+    color: var(--grayishBlue);
+}
+#header h1:nth-of-type(2) {
+    font-weight: 600;
+    color: var(--veryDarkBlue);
+}
+#header h3 {
+    font-weight: 400;
+    color: var(--grayishBlue);
+}
+#header p {
+    max-width: 500px;
+}
+.box {
+    margin: 0px 30px 25px 30px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px var(--grayishBlue);
+    border-top-style: solid;
+    border-top-width: 5px;
+}
+.box p {
+    color: var(--grayishBlue);
+}
+.col:first-of-type .box {
+    border-top-color: var(--cyan)
+}
+.col:nth-of-type(2) .box:first-of-type {
+    border-top-color: var(--red);
+}
+.col:nth-of-type(2) .box:nth-of-type(2){
+    border-top-color: var(--orange)
+}
+.col:nth-of-type(3) .box:first-of-type {
+    border-top-color: var(--blue)
+}
+.box img {
+    float: right;
+    margin-top: 45px;
+}
+@media only screen and (min-width: 1280px) {
+.col {
+    width: 33.1%;
+    display: inline-block;
+    vertical-align: middle;
+ }
+.box {
+    margin: 30px 15px;
+ }
+} 
